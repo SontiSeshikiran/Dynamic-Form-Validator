@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+   
+        <style>
+            input
+            {
+                padding:50px;
+                font-size:30px;
+                text-align:center;
+            }
+    </style>
+    <script>
+        function mobile()
+{
+    let inputbox=document.getElementById("mbt")
+    let mobile=inputbox.value
+    let mlength=mobile.length
+
+    if(mlength==10)
+    {
+//green
+inputbox.style.backgroundColor="green"
+    }
+    else
+    {
+        inputbox.style.backgroundColor="red"
+    }
+}
+function hum()
+{
+    let hello=document.getElementById("hh")
+    let kk=document.getElementById("op")
+    ss=kk.value
+    hello.style.backgroundColor=ss
+}
+    </script>
+</head>
+<body id="hh">
+    <h1 style="color:red;"><ins >Dynamic Form Validation and Color Customization using JavaScript.</ins></h1>
+    <input type="text" placeholder="Enter mobile" id="mbt" onkeyup="mobile()">
+    <br><br>
+    <input type="text" placeholder="Enter Color" id="op" onblur=hum()>
+</body>
+</html>
